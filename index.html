@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Schedule</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+}
+
+button{
+    padding:10px 20px;
+    margin:5px;
+    cursor:pointer;
+}
+
+table{
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+}
+
+thead{
+    background-color:#2c3e50;
+    color:white;
+}
+
+th, td{
+    padding:10px;
+    text-align:center;
+    border:1px solid #ddd;
+}
+
+tbody tr:nth-child(even){
+    background-color:#f2f2f2;
+}
+
+tbody tr:hover{
+    background-color:#d6eaf8;
+}
+
+tfoot{
+    background-color:#85c1e9;
+    font-weight:bold;
+}
+
+header{
+    background-color:#6a0dad; /* Purple */
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+header h1{
+    margin:0;
+    padding-bottom:5px;
+}
+header h2{
+    margin:0;
+    font-weight:normal;
+}
+</style>
+
+<script>
+function showSection(sectionId){
+    document.getElementById("lists").style.display="none";
+    document.getElementById("grades").style.display="none";
+
+    document.getElementById(sectionId).style.display="block";
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Cordova Public College</h1>
+    <h2>Class Schedule Page</h2>
+</header>
+
+<p><b>Name:</b> JANKYLE ROSANI TORREJAS</p>
+<p><b>Student No:</b> 20250292</p>
+<p><b>Course & Year:</b> BSIT-1D</p>
+<p><b>Term:</b> First Semester</p>
+
+<main>
+
+<button onclick="showSection('lists')">Webpage / Lists</button>
+<button onclick="showSection('grades')">Student Grades</button>
+
+<div id="lists">
+<section>
+<h2>My Subjects (Unordered List)</h2>
+<ul>
+    <li>Movement Competency – 2:00-3:00pm (MW)</li>
+    <li>Introduction to Computing – 1:00-2:00pm (MWF)</li>
+    <li>Office Productivity Tools – 11:00-12:00pm (MWF)</li>
+    <li>Mathematics in the Modern World – 3:00-4:00pm (MWF)</li>
+    <li>Pre-Calculus – 4:00-5:00pm (MWF)</li>
+    <li>Computer Programming 1 – 10:00-1:00pm (SAT)</li>
+    <li>Sining ng Komunikasyon – 10:00-11:30am (TTH)</li>
+    <li>Understanding the Self – 7:00-8:30am (TTH)</li>
+    <li>NSTP – 8:30-10:00am (TTH)</li>
+</ul>
+</section>
+
+<section>
+<h2>Daily Routine (Ordered List)</h2>
+<ol>
+    <li>Go to School</li>
+    <li>Attend Classes</li>
+    <li>Study</li>
+    <li>Do Homework</li>
+    <li>Play some Video Games</li>
+    <li>Go to Sleep</li>
+</ol>
+</section>
+</div>
+
+<div id="grades" style="display:none;">
+<section>
+    <h2>Student Grade Table</h2>
+<table>
+<thead>
+<tr>
+    <th>Descriptive Title</th>
+    <th>Final Grade</th>
+    <th>Units Enrolled</th>
+    <th>Units Earned</th>
+    <th>Remarks</th>
+    <th>Intructor name</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+    <td>Sining ng Komunikasyon</td>
+    <td>1.5</td>
+    <td>3</td>
+    <td>3</td>
+    <td>Passed</td>
+    <td>Mr. Emmanuel Ando</td>
+</tr>
+<tr>
+    <td>Mathematics in the Modern World</td>
+    <td>1.2</td>
+    <td>3</td>
+    <td>3</td>
+    <td>Passed</td>
+    <td>Ms. Jenysel Cadungog</td>
+</tr>
+<tr>
+    <td>Understanding the Self</td>
+    <td>2.0</td>
+    <td>3</td>
+    <td>3</td>
+    <td>Passed</td>
+    <td>Ms. Mariz Yagong</td>
+</tr>
+<tr>
+    <td>National Service Training Program</td>
+    <td>1.7</td>
+    <td>3</td>
+    <td>3</td>
+    <td>Passed</td>
+    <td>Mr. Leo Francis James Paquibot</td>
+</tr>
+<tr>
+    <td>Movement Competency Training</td>
+    <td>1.4</td>
+    <td>2</td>
+    <td>2</td>
+    <td>Passed</td>
+    <td>Mr. John Gil Paquibot</td>
+</tr>
+<tr>
+    <td>Computer Programming</td>
+    <td>1.4</td>
+    <td>3</td>
+    <td>3</td>
+    <td>Passed</td>
+    <td>Ms. Irene Eda</td>
+</tr>
+<tr>
+    <td>Office Productivity Tools</td>
+    <td>1.8</td>
+    <td>3</td>
+    <td>3</td>
+    <td>Passed</td>
+    <td>Mr. Lourenze Leonizo</td>
+</tr>
+<tr>
+    <td>Pre-Calculus</td>
+    <td>2.0</td>
+    <td>3</td>
+    <td>3</td>
+    <td>Passed</td>
+    <td>Mr. Jordan Yagong</td>
+</tr>
+<tr>
+    <td>Introduction to Computing</td>
+    <td>2.0</td>
+    <td>3</td>
+    <td>3</td>
+    <td>Passed</td>
+    <td>Mr. Bernie Empaces</td>
+</tr>
+</tbody>
+
+<tfoot>
+<tr>
+    <td colspan="2" style="text-align:center; font-weight:bold;">Total Units</td>
+    <td>26</td>
+    <td>26</td>
+    <td colspan="2" style="text-align:center; font-weight:bold;">Semesteral Average: 1.67</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</div>
+
+</main>
+
+<footer>
+<p>© First Semester Class Schedule</p>
+</footer>
+
+</body>
+</html>
