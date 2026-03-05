@@ -1,2 +1,2 @@
-# Class-Schedule
-Class Schedule Page
+# Class-Schedule Page
+Class Schedule
